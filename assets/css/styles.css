@@ -68,6 +68,7 @@ p {
 .hero {
     height: 800px;
     width: 100%;
+    object-fit:cover;
     margin-bottom: 25px;
     background: url(../Images/hero.bg.jpg);
     background-size: cover;
@@ -128,6 +129,7 @@ p {
     border-left: 5px solid var(--tertiary-color);
     display: flex;
     flex: 1 1 50%;
+    flex-flow: row wrap;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 5px;
@@ -138,8 +140,7 @@ p {
 }
 .container {
     display: flex;
-    flex-wrap: wrap;
-    width:50%;
+    flex-flow:wrap;
     padding:25px;
     position: relative;
 }
@@ -156,7 +157,7 @@ p {
 
 img {
     height: 400px;
-    width: 600px;
+    width: 400px;
     object-fit: cover;
     opacity: 0.5;
   }
@@ -200,3 +201,10 @@ li a {
     text-shadow:var(--tertiary-color);
     font-weight: bolder;
  }
+
+ /* Media Response Layout */
+ @media (max-width: 700px) {
+    body {   
+      max-width: 100%;
+    }
+}
