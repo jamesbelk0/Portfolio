@@ -155,8 +155,9 @@ p {
 }
 
 img {
-    max-height: 400px;
-    max-width: 400px;
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
     opacity: 0.5;
   }
 
